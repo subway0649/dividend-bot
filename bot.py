@@ -15,7 +15,7 @@ def main():
     dp = updater.dispatcher
 
     dp.add_handler(CommandHandler('start', start))
-    dp.add_handler(CommandHandler('배당금현황', dividend))
+    dp.add_handler(CommandHandler('dividend', dividend))
 
     updater.start_polling()
     updater.idle()
